@@ -1,3 +1,5 @@
+***This project is currently in progress***
+
 # **TinySpace.AI 🏠✨**  
 **AI-Powered Interior Design for Small Spaces**  
 
