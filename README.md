@@ -24,7 +24,7 @@ TinySpace.AI is a Swift-based iOS application that helps users furnish and organ
 ## **📌 Installation**  
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/yourusername/TinySpace.AI.git
+   git clone https://github.com/elsheikhtibian/TinySpace.AI.git
    cd TinySpace.AI
 2. Open TinySpace.AI.xcodeproj in Xcode.
 3. Build and run the project on an iOS simulator or device.
