@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08C8C6102D4EAFEC000D9389 /* TinySpace_AIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C60F2D4EAFEC000D9389 /* TinySpace_AIApp.swift */; };
+		08C8C6122D4EAFEC000D9389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C6112D4EAFEC000D9389 /* ContentView.swift */; };
+		08C8C6142D4EAFF0000D9389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C8C6132D4EAFF0000D9389 /* Assets.xcassets */; };
+		08C8C6172D4EAFF0000D9389 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C8C6162D4EAFF0000D9389 /* Preview Assets.xcassets */; };
+		08C8C6212D4EAFF1000D9389 /* TinySpace_AITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C6202D4EAFF1000D9389 /* TinySpace_AITests.swift */; };
+		08C8C62B2D4EAFF1000D9389 /* TinySpace_AIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C62A2D4EAFF1000D9389 /* TinySpace_AIUITests.swift */; };
+		08C8C62D2D4EAFF1000D9389 /* TinySpace_AIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C62C2D4EAFF1000D9389 /* TinySpace_AIUITestsLaunchTests.swift */; };
+		08C8C63A2D4EB0BD000D9389 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C6392D4EB0BD000D9389 /* ImagePicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08C8C61D2D4EAFF1000D9389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C8C6042D4EAFEC000D9389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08C8C60B2D4EAFEC000D9389;
+			remoteInfo = TinySpace.AI;
+		};
+		08C8C6272D4EAFF1000D9389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C8C6042D4EAFEC000D9389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08C8C60B2D4EAFEC000D9389;
+			remoteInfo = TinySpace.AI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08C8C60C2D4EAFEC000D9389 /* TinySpace.AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinySpace.AI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C8C60F2D4EAFEC000D9389 /* TinySpace_AIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinySpace_AIApp.swift; sourceTree = "<group>"; };
+		08C8C6112D4EAFEC000D9389 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		08C8C6132D4EAFF0000D9389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08C8C6162D4EAFF0000D9389 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08C8C61C2D4EAFF1000D9389 /* TinySpace.AITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinySpace.AITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C8C6202D4EAFF1000D9389 /* TinySpace_AITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinySpace_AITests.swift; sourceTree = "<group>"; };
+		08C8C6262D4EAFF1000D9389 /* TinySpace.AIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinySpace.AIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C8C62A2D4EAFF1000D9389 /* TinySpace_AIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinySpace_AIUITests.swift; sourceTree = "<group>"; };
+		08C8C62C2D4EAFF1000D9389 /* TinySpace_AIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinySpace_AIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08C8C6392D4EB0BD000D9389 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08C8C6092D4EAFEC000D9389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08C8C6192D4EAFF1000D9389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08C8C6232D4EAFF1000D9389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08C8C6032D4EAFEC000D9389 = {
+			isa = PBXGroup;
+			children = (
+				08C8C60E2D4EAFEC000D9389 /* TinySpace.AI */,
+				08C8C61F2D4EAFF1000D9389 /* TinySpace.AITests */,
+				08C8C6292D4EAFF1000D9389 /* TinySpace.AIUITests */,
+				08C8C60D2D4EAFEC000D9389 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08C8C60D2D4EAFEC000D9389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C8C60C2D4EAFEC000D9389 /* TinySpace.AI.app */,
+				08C8C61C2D4EAFF1000D9389 /* TinySpace.AITests.xctest */,
+				08C8C6262D4EAFF1000D9389 /* TinySpace.AIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08C8C60E2D4EAFEC000D9389 /* TinySpace.AI */ = {
+			isa = PBXGroup;
+			children = (
+				08C8C60F2D4EAFEC000D9389 /* TinySpace_AIApp.swift */,
+				08C8C6112D4EAFEC000D9389 /* ContentView.swift */,
+				08C8C6132D4EAFF0000D9389 /* Assets.xcassets */,
+				08C8C6152D4EAFF0000D9389 /* Preview Content */,
+				08C8C6392D4EB0BD000D9389 /* ImagePicker.swift */,
+			);
+			path = TinySpace.AI;
+			sourceTree = "<group>";
+		};
+		08C8C6152D4EAFF0000D9389 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				08C8C6162D4EAFF0000D9389 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08C8C61F2D4EAFF1000D9389 /* TinySpace.AITests */ = {
+			isa = PBXGroup;
+			children = (
+				08C8C6202D4EAFF1000D9389 /* TinySpace_AITests.swift */,
+			);
+			path = TinySpace.AITests;
+			sourceTree = "<group>";
+		};
+		08C8C6292D4EAFF1000D9389 /* TinySpace.AIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08C8C62A2D4EAFF1000D9389 /* TinySpace_AIUITests.swift */,
+				08C8C62C2D4EAFF1000D9389 /* TinySpace_AIUITestsLaunchTests.swift */,
+			);
+			path = TinySpace.AIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08C8C60B2D4EAFEC000D9389 /* TinySpace.AI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08C8C6302D4EAFF1000D9389 /* Build configuration list for PBXNativeTarget "TinySpace.AI" */;
+			buildPhases = (
+				08C8C6082D4EAFEC000D9389 /* Sources */,
+				08C8C6092D4EAFEC000D9389 /* Frameworks */,
+				08C8C60A2D4EAFEC000D9389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinySpace.AI;
+			productName = TinySpace.AI;
+			productReference = 08C8C60C2D4EAFEC000D9389 /* TinySpace.AI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08C8C61B2D4EAFF1000D9389 /* TinySpace.AITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08C8C6332D4EAFF1000D9389 /* Build configuration list for PBXNativeTarget "TinySpace.AITests" */;
+			buildPhases = (
+				08C8C6182D4EAFF1000D9389 /* Sources */,
+				08C8C6192D4EAFF1000D9389 /* Frameworks */,
+				08C8C61A2D4EAFF1000D9389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08C8C61E2D4EAFF1000D9389 /* PBXTargetDependency */,
+			);
+			name = TinySpace.AITests;
+			productName = TinySpace.AITests;
+			productReference = 08C8C61C2D4EAFF1000D9389 /* TinySpace.AITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08C8C6252D4EAFF1000D9389 /* TinySpace.AIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08C8C6362D4EAFF1000D9389 /* Build configuration list for PBXNativeTarget "TinySpace.AIUITests" */;
+			buildPhases = (
+				08C8C6222D4EAFF1000D9389 /* Sources */,
+				08C8C6232D4EAFF1000D9389 /* Frameworks */,
+				08C8C6242D4EAFF1000D9389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08C8C6282D4EAFF1000D9389 /* PBXTargetDependency */,
+			);
+			name = TinySpace.AIUITests;
+			productName = TinySpace.AIUITests;
+			productReference = 08C8C6262D4EAFF1000D9389 /* TinySpace.AIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08C8C6042D4EAFEC000D9389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					08C8C60B2D4EAFEC000D9389 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					08C8C61B2D4EAFF1000D9389 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 08C8C60B2D4EAFEC000D9389;
+					};
+					08C8C6252D4EAFF1000D9389 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 08C8C60B2D4EAFEC000D9389;
+					};
+				};
+			};
+			buildConfigurationList = 08C8C6072D4EAFEC000D9389 /* Build configuration list for PBXProject "TinySpace.AI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08C8C6032D4EAFEC000D9389;
+			productRefGroup = 08C8C60D2D4EAFEC000D9389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08C8C60B2D4EAFEC000D9389 /* TinySpace.AI */,
+				08C8C61B2D4EAFF1000D9389 /* TinySpace.AITests */,
+				08C8C6252D4EAFF1000D9389 /* TinySpace.AIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08C8C60A2D4EAFEC000D9389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C8C6172D4EAFF0000D9389 /* Preview Assets.xcassets in Resources */,
+				08C8C6142D4EAFF0000D9389 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08C8C61A2D4EAFF1000D9389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08C8C6242D4EAFF1000D9389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08C8C6082D4EAFEC000D9389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C8C63A2D4EB0BD000D9389 /* ImagePicker.swift in Sources */,
+				08C8C6122D4EAFEC000D9389 /* ContentView.swift in Sources */,
+				08C8C6102D4EAFEC000D9389 /* TinySpace_AIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08C8C6182D4EAFF1000D9389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C8C6212D4EAFF1000D9389 /* TinySpace_AITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08C8C6222D4EAFF1000D9389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C8C62B2D4EAFF1000D9389 /* TinySpace_AIUITests.swift in Sources */,
+				08C8C62D2D4EAFF1000D9389 /* TinySpace_AIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08C8C61E2D4EAFF1000D9389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08C8C60B2D4EAFEC000D9389 /* TinySpace.AI */;
+			targetProxy = 08C8C61D2D4EAFF1000D9389 /* PBXContainerItemProxy */;
+		};
+		08C8C6282D4EAFF1000D9389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08C8C60B2D4EAFEC000D9389 /* TinySpace.AI */;
+			targetProxy = 08C8C6272D4EAFF1000D9389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08C8C62E2D4EAFF1000D9389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08C8C62F2D4EAFF1000D9389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08C8C6312D4EAFF1000D9389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TinySpace.AI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TinySpace-AI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08C8C6322D4EAFF1000D9389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TinySpace.AI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TinySpace-AI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08C8C6342D4EAFF1000D9389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TinySpace-AITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinySpace.AI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TinySpace.AI";
+			};
+			name = Debug;
+		};
+		08C8C6352D4EAFF1000D9389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TinySpace-AITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinySpace.AI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TinySpace.AI";
+			};
+			name = Release;
+		};
+		08C8C6372D4EAFF1000D9389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TinySpace-AIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TinySpace.AI;
+			};
+			name = Debug;
+		};
+		08C8C6382D4EAFF1000D9389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TinySpace-AIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TinySpace.AI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08C8C6072D4EAFEC000D9389 /* Build configuration list for PBXProject "TinySpace.AI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C8C62E2D4EAFF1000D9389 /* Debug */,
+				08C8C62F2D4EAFF1000D9389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08C8C6302D4EAFF1000D9389 /* Build configuration list for PBXNativeTarget "TinySpace.AI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C8C6312D4EAFF1000D9389 /* Debug */,
+				08C8C6322D4EAFF1000D9389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08C8C6332D4EAFF1000D9389 /* Build configuration list for PBXNativeTarget "TinySpace.AITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C8C6342D4EAFF1000D9389 /* Debug */,
+				08C8C6352D4EAFF1000D9389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08C8C6362D4EAFF1000D9389 /* Build configuration list for PBXNativeTarget "TinySpace.AIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C8C6372D4EAFF1000D9389 /* Debug */,
+				08C8C6382D4EAFF1000D9389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08C8C6042D4EAFEC000D9389 /* Project object */;
+}
