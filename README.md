@@ -1,7 +1,7 @@
 # **TinySpace.AI 🏠✨**  
 **AI-Powered Interior Design for Small Spaces**  
 
-TinySpace.AI is a Swift-based iOS application that helps users furnish and organize small spaces using AI. Perfect for city apartments, dorms, and compact living areas, this app allows users to:  
+TinySpace.AI is a Swift-based iOS application that helps users furnish and organize small spaces using AI. Perfect for city apartments, dorms, and compact living areas. Users are able to:
 
 ✅ **Upload a photo** of their room  
 ✅ **Swipe through furniture & decor** styles to personalize their space  
@@ -14,12 +14,6 @@ TinySpace.AI is a Swift-based iOS application that helps users furnish and organ
 - **Personalized Recommendations**: Get furniture suggestions tailored to your style and space dimensions.  
 - **Interactive Preview**: Visualize how different furniture pieces fit into your room.  
 - **Seamless Shopping Experience**: Click on furniture recommendations to find stores near you.  
-
-## **📸 How It Works**  
-1️⃣ **Upload a Room Photo**: Start by selecting or taking a picture of your room.  
-2️⃣ **Swipe on Furniture & Decor**: Pick what matches your style.  
-3️⃣ **AI Generates Your Room Layout**: See your room transformed with AI suggestions.  
-4️⃣ **Explore & Shop**: Click on furniture recommendations to find stores near you.  
 
 ## **🛠️ Tech Stack**  
 - **SwiftUI** – Modern UI framework for iOS  
