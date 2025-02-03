@@ -1,14 +1,17 @@
 import SwiftUI
+import SceneKit
+import Vision
 
 struct ContentView: View {
     @State private var selectedImage: UIImage?
     @State private var showImagePicker = false
+    @State private var showRoomView = false
     @State private var aiGeneratedLayouts: [String] = []
     @State private var showError = false
 
     var body: some View {
         ZStack {
-            Color.black.ignoresSafeArea() // Full black background
+            Color.black.ignoresSafeArea()
 
             VStack(spacing: 15) {
                 Spacer()
@@ -19,7 +22,7 @@ struct ContentView: View {
                         .foregroundColor(.white)
 
                     Text("Let AI do the furnishing")
-                        .font(.system(size: 14, weight: .regular, design: .rounded))
+                        .font(.system(size: 15, weight: .regular, design: .rounded))
                         .foregroundColor(.gray)
                 }
 
@@ -38,8 +41,8 @@ struct ContentView: View {
                         .padding(.horizontal, 40)
                 }
 
-                Text("And we’ll take care of the rest :)")
-                    .font(.system(size: 14, weight: .regular, design: .rounded))
+                Text("And we'll take care of the rest :)")
+                    .font(.system(size: 15, weight: .regular, design: .rounded))
                     .foregroundColor(.gray)
                     .padding(.top, 5)
 
@@ -48,6 +51,16 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showImagePicker) {
             ImagePicker(image: $selectedImage)
+        }
+        .onChange(of: selectedImage) { newImage in
+            if newImage != nil {
+                showRoomView = true
+            }
+        }
+        .fullScreenCover(isPresented: $showRoomView) {
+            if let image = selectedImage {
+                RoomDesignView(roomImage: image)
+            }
         }
         .alert(isPresented: $showError) {
             Alert(title: Text("Error"), message: Text("Something went wrong. Please try again."), dismissButton: .default(Text("OK")))

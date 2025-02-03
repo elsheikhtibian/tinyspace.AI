@@ -1,4 +1,6 @@
 import SwiftUI
+import SceneKit
+import Vision
 
 @main
 struct TinySpace_AIApp: App {

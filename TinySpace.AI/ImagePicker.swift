@@ -1,5 +1,7 @@
 import SwiftUI
 import PhotosUI
+import SceneKit
+import Vision
 
 struct ImagePicker: UIViewControllerRepresentable {
     @Binding var image: UIImage?

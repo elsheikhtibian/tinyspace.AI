@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		084CDE0D2D5143FD00A3594D /* RoomDesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CDE0C2D5143FD00A3594D /* RoomDesignView.swift */; };
 		08C8C6102D4EAFEC000D9389 /* TinySpace_AIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C60F2D4EAFEC000D9389 /* TinySpace_AIApp.swift */; };
 		08C8C6122D4EAFEC000D9389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C6112D4EAFEC000D9389 /* ContentView.swift */; };
 		08C8C6142D4EAFF0000D9389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C8C6132D4EAFF0000D9389 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		084CDE0C2D5143FD00A3594D /* RoomDesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDesignView.swift; sourceTree = "<group>"; };
 		08C8C60C2D4EAFEC000D9389 /* TinySpace.AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinySpace.AI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C8C60F2D4EAFEC000D9389 /* TinySpace_AIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinySpace_AIApp.swift; sourceTree = "<group>"; };
 		08C8C6112D4EAFEC000D9389 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				08C8C6132D4EAFF0000D9389 /* Assets.xcassets */,
 				08C8C6152D4EAFF0000D9389 /* Preview Content */,
 				08C8C6392D4EB0BD000D9389 /* ImagePicker.swift */,
+				084CDE0C2D5143FD00A3594D /* RoomDesignView.swift */,
 			);
 			path = TinySpace.AI;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C8C63A2D4EB0BD000D9389 /* ImagePicker.swift in Sources */,
+				084CDE0D2D5143FD00A3594D /* RoomDesignView.swift in Sources */,
 				08C8C6122D4EAFEC000D9389 /* ContentView.swift in Sources */,
 				08C8C6102D4EAFEC000D9389 /* TinySpace_AIApp.swift in Sources */,
 			);
