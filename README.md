@@ -7,7 +7,7 @@ TinySpace.AI is a Swift-based iOS application that helps users furnish and organ
 
 ✅ **Upload a photo** of their room  
 ✅ **Swipe through furniture & decor** styles to personalize their space  
-✅ **Generate an AI-designed layout** based on their selections  
+✅ **Generate a 3D AI-designed layout** based on their selections  
 ✅ **Discover & shop** furniture that fits their space  
 
 ## **🚀 Features**  
