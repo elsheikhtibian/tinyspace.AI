@@ -1,36 +1,48 @@
-import SwiftUI
-
 struct ContentView: View {
     @State private var selectedImage: UIImage?
     @State private var showImagePicker = false
     @State private var showRoomView = false
-    @State private var aiGeneratedLayouts: [String] = []
-    @State private var showError = false
+    @State private var roomWidth: String = ""
+    @State private var roomDepth: String = ""
+    @State private var roomHeight: String = "2.5" // Default height
 
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
-
-            VStack(spacing: 15) {
+            VStack {
                 Spacer()
-
                 VStack(spacing: 5) {
                     Text("Tiny Space")
                         .font(.system(size: 28, weight: .semibold, design: .rounded))
                         .foregroundColor(.white)
 
                     Text("Let AI do the furnishing")
-                        .font(.system(size: 15, weight: .regular, design: .rounded))
+                        .font(.system(size: 15))
                         .foregroundColor(.gray)
                 }
-
                 Spacer()
 
+                // Room Dimensions Form
+                VStack {
+                    TextField("Room Width (meters)", text: $roomWidth)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(.decimalPad)
+
+                    TextField("Room Depth (meters)", text: $roomDepth)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(.decimalPad)
+                    
+                    TextField("Room Height (meters)", text: $roomHeight)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(.decimalPad)
+                }
+                .padding(.horizontal, 40)
+                
                 Button(action: {
                     showImagePicker = true
                 }) {
-                    Text("Upload Room Photos")
-                        .font(.system(size: 16, weight: .medium))
+                    Text("Upload Room Photo")
+                        .font(.system(size: 16))
                         .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.white)
@@ -38,11 +50,6 @@ struct ContentView: View {
                         .cornerRadius(10)
                         .padding(.horizontal, 40)
                 }
-
-                Text("And we'll take care of the rest :)")
-                    .font(.system(size: 15, weight: .regular, design: .rounded))
-                    .foregroundColor(.gray)
-                    .padding(.top, 5)
 
                 Spacer(minLength: 50)
             }
@@ -56,12 +63,9 @@ struct ContentView: View {
             }
         }
         .fullScreenCover(isPresented: $showRoomView) {
-            if let image = selectedImage {
-                RoomDesignView(roomImage: image)
+            if let image = selectedImage, let width = Double(roomWidth), let depth = Double(roomDepth), let height = Double(roomHeight) {
+                RoomDesignView(roomImage: image, roomDimensions: (width, depth, height))
             }
-        }
-        .alert(isPresented: $showError) {
-            Alert(title: Text("Error"), message: Text("Something went wrong. Please try again."), dismissButton: .default(Text("OK")))
         }
     }
 }

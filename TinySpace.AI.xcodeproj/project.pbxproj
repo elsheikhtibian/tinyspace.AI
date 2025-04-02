@@ -12,6 +12,7 @@
 		084CDE112D5149E100A3594D /* RoomAnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CDE102D5149E100A3594D /* RoomAnalysisService.swift */; };
 		084CDE132D5149FB00A3594D /* AILayoutGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CDE122D5149FB00A3594D /* AILayoutGenerator.swift */; };
 		084CDE152D514A1200A3594D /* FurnitureStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CDE142D514A1200A3594D /* FurnitureStorageService.swift */; };
+		08B7CD352D9DBBF4002C64ED /* FurnitureDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B7CD342D9DBBF4002C64ED /* FurnitureDetectionService.swift */; };
 		08C8C6102D4EAFEC000D9389 /* TinySpace_AIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C60F2D4EAFEC000D9389 /* TinySpace_AIApp.swift */; };
 		08C8C6122D4EAFEC000D9389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C6112D4EAFEC000D9389 /* ContentView.swift */; };
 		08C8C6142D4EAFF0000D9389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C8C6132D4EAFF0000D9389 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		084CDE102D5149E100A3594D /* RoomAnalysisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomAnalysisService.swift; sourceTree = "<group>"; };
 		084CDE122D5149FB00A3594D /* AILayoutGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AILayoutGenerator.swift; sourceTree = "<group>"; };
 		084CDE142D514A1200A3594D /* FurnitureStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureStorageService.swift; sourceTree = "<group>"; };
+		08B7CD342D9DBBF4002C64ED /* FurnitureDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureDetectionService.swift; sourceTree = "<group>"; };
 		08C8C60C2D4EAFEC000D9389 /* TinySpace.AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinySpace.AI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C8C60F2D4EAFEC000D9389 /* TinySpace_AIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinySpace_AIApp.swift; sourceTree = "<group>"; };
 		08C8C6112D4EAFEC000D9389 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				084CDE102D5149E100A3594D /* RoomAnalysisService.swift */,
 				084CDE122D5149FB00A3594D /* AILayoutGenerator.swift */,
 				084CDE142D514A1200A3594D /* FurnitureStorageService.swift */,
+				08B7CD342D9DBBF4002C64ED /* FurnitureDetectionService.swift */,
 			);
 			path = TinySpace.AI;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				084CDE0F2D5149CA00A3594D /* FurnitureModel.swift in Sources */,
 				08C8C6122D4EAFEC000D9389 /* ContentView.swift in Sources */,
 				08C8C6102D4EAFEC000D9389 /* TinySpace_AIApp.swift in Sources */,
+				08B7CD352D9DBBF4002C64ED /* FurnitureDetectionService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
