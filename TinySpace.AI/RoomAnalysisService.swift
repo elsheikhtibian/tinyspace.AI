@@ -1,14 +1,30 @@
-import Vision
 import UIKit
+import Vision
 
 class RoomAnalysisService {
-    func estimateRoomDimensions(from image: UIImage) -> (width: Double, height: Double)? {
-        // Future implementation of room dimension estimation
-        return (width: 4.0, height: 3.0)
-    }
-    
-    func detectWalls(in image: UIImage) -> [CGRect] {
-        // Future wall detection implementation
-        return []
+    static func analyzeRoom(from image: UIImage, completion: @escaping (CGSize?) -> Void) {
+        guard let cgImage = image.cgImage else {
+            completion(nil)
+            return
+        }
+        
+        let request = VNDetectRectanglesRequest { request, error in
+            guard let results = request.results as? [VNRectangleObservation], let rect = results.first else {
+                completion(nil)
+                return
+            }
+            
+            let roomSize = CGSize(width: rect.boundingBox.width * image.size.width,
+                                  height: rect.boundingBox.height * image.size.height)
+            completion(roomSize)
+        }
+        
+        let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+        do {
+            try handler.perform([request])
+        } catch {
+            print("Room analysis failed: \(error)")
+            completion(nil)
+        }
     }
 }

@@ -13,7 +13,7 @@ struct RoomDesignView: View {
     
     var body: some View {
         VStack {
-            // Top navigation
+            // Top Navigation Bar
             HStack {
                 Button(action: {
                     presentationMode.wrappedValue.dismiss()
@@ -32,7 +32,7 @@ struct RoomDesignView: View {
             }
             .background(Color.black)
             
-            // Uploaded Image
+            // Display Uploaded Room Image
             Image(uiImage: roomImage)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -48,8 +48,7 @@ struct RoomDesignView: View {
                 }
             
             // 3D Room Visualization
-            SceneView(scene: roomScene,
-                      options: [.allowsCameraControl])
+            SceneView(scene: roomScene, options: [.allowsCameraControl])
                 .frame(height: 300)
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(10)
@@ -105,10 +104,11 @@ struct RoomDesignView: View {
         }
     }
     
+    /// Sets up the 3D room environment
     func setupRoomScene() {
         let scene = SCNScene()
         
-        // Create walls
+        // Define wall properties
         let wallWidth: CGFloat = 4.0
         let wallHeight: CGFloat = 2.5
         let wallThickness: CGFloat = 0.1
@@ -116,14 +116,14 @@ struct RoomDesignView: View {
         let wallMaterial = SCNMaterial()
         wallMaterial.diffuse.contents = UIColor.white.withAlphaComponent(0.8)
         
-        // Floor
+        // Create Floor
         let floorGeometry = SCNPlane(width: wallWidth, height: wallWidth)
         let floorNode = SCNNode(geometry: floorGeometry)
         floorNode.geometry?.materials = [wallMaterial]
         floorNode.rotation = SCNVector4(1, 0, 0, -CGFloat.pi/2)
         scene.rootNode.addChildNode(floorNode)
         
-        // Four walls with basic setup
+        // Create Walls
         let wallGeometries = [
             SCNPlane(width: wallWidth, height: wallHeight),
             SCNPlane(width: wallWidth, height: wallHeight),
@@ -132,17 +132,17 @@ struct RoomDesignView: View {
         ]
         
         let wallPositions = [
-            SCNVector3(0, wallHeight/2, -wallWidth/2),   // Back wall
-            SCNVector3(0, wallHeight/2, wallWidth/2),    // Front wall
-            SCNVector3(-wallWidth/2, wallHeight/2, 0),   // Left wall
-            SCNVector3(wallWidth/2, wallHeight/2, 0)     // Right wall
+            SCNVector3(0, wallHeight/2, -wallWidth/2),  // Back wall
+            SCNVector3(0, wallHeight/2, wallWidth/2),   // Front wall
+            SCNVector3(-wallWidth/2, wallHeight/2, 0),  // Left wall
+            SCNVector3(wallWidth/2, wallHeight/2, 0)    // Right wall
         ]
         
         let wallRotations = [
-            SCNVector4(0, 1, 0, 0),                     // Back wall
-            SCNVector4(0, 1, 0, CGFloat.pi),            // Front wall
-            SCNVector4(0, 1, 0, -CGFloat.pi/2),         // Left wall
-            SCNVector4(0, 1, 0, CGFloat.pi/2)           // Right wall
+            SCNVector4(0, 1, 0, 0),
+            SCNVector4(0, 1, 0, CGFloat.pi),
+            SCNVector4(0, 1, 0, -CGFloat.pi/2),
+            SCNVector4(0, 1, 0, CGFloat.pi/2)
         ]
         
         for (index, geometry) in wallGeometries.enumerated() {
@@ -153,7 +153,7 @@ struct RoomDesignView: View {
             scene.rootNode.addChildNode(wallNode)
         }
         
-        // Add a simple camera
+        // Add Camera
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3(0, 2, 5)
@@ -162,10 +162,10 @@ struct RoomDesignView: View {
         roomScene = scene
     }
     
+    /// Updates the wall color in the 3D scene
     func updateWallColor(_ color: Color) {
         guard let scene = roomScene else { return }
         
-        // Update wall materials with new color
         scene.rootNode.childNodes.forEach { node in
             if let geometry = node.geometry, geometry is SCNPlane {
                 let material = SCNMaterial()
@@ -175,6 +175,7 @@ struct RoomDesignView: View {
         }
     }
     
+    /// Places furniture in the room based on selection
     func placeFurniture(type: String) {
         guard let scene = roomScene else { return }
         
@@ -182,6 +183,7 @@ struct RoomDesignView: View {
         scene.rootNode.addChildNode(furnitureNode)
     }
     
+    /// Creates furniture nodes based on type
     func createFurnitureNode(type: String) -> SCNNode {
         let furnitureNode = SCNNode()
         
@@ -226,20 +228,10 @@ struct RoomDesignView: View {
     }
     
     func generateAILayout() {
-        // Placeholder for future AI layout generation
-        print("Generating AI Layout")
-        // Future implementation will:
-        // 1. Analyze room dimensions
-        // 2. Suggest optimal furniture placement
-        // 3. Automatically add furniture to the scene
+        print("Generating AI Layout (future implementation)")
     }
     
     func saveRoomDesign() {
-        // Placeholder for saving room design
-        print("Saving Room Design")
-        // Future implementation will:
-        // 1. Capture current scene state
-        // 2. Save furniture positions
-        // 3. Allow user to name and store design
+        print("Saving Room Design (future implementation)")
     }
 }

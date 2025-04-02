@@ -1,12 +1,22 @@
 import Foundation
 
 class FurnitureStorageService {
-    func saveRoomDesign(furniture: [Furniture]) {
-        // Implementation for saving room design
+    private static let key = "SavedRoomDesigns"
+
+    static func saveDesign(furniture: [Furniture]) {
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(furniture) {
+            UserDefaults.standard.set(encoded, forKey: key)
+        }
     }
-    
-    func retrieveRoomDesigns() -> [[Furniture]] {
-        // Implementation for retrieving saved designs
+
+    static func loadDesign() -> [Furniture] {
+        guard let savedData = UserDefaults.standard.data(forKey: key) else { return [] }
+        let decoder = JSONDecoder()
+        if let decoded = try? decoder.decode([Furniture].self, from: savedData) {
+            return decoded
+        }
         return []
     }
 }
+

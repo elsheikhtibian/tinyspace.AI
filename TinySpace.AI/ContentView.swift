@@ -1,6 +1,4 @@
 import SwiftUI
-import SceneKit
-import Vision
 
 struct ContentView: View {
     @State private var selectedImage: UIImage?
