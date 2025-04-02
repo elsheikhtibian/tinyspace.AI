@@ -1,3 +1,5 @@
+import SwiftUI
+
 struct ContentView: View {
     @State private var selectedImage: UIImage?
     @State private var showImagePicker = false

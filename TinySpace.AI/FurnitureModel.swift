@@ -1,37 +1,50 @@
-import Foundation
+import SwiftUI
+import SceneKit
 
+// Furniture struct with necessary properties
 struct Furniture: Codable {
     let id: UUID
     let type: String
-    let position: (x: Float, y: Float, z: Float)
+    let width: Double
+    let height: Double
+    let length: Double
+    let colorHex: String
+    let position: [Float]
 
     enum CodingKeys: String, CodingKey {
-        case id, type, position
+        case id, type, width, height, length, colorHex, position
     }
 
-    // Encoding to handle tuple
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(id, forKey: .id)
-        try container.encode(type, forKey: .type)
-        try container.encode([position.x, position.y, position.z], forKey: .position)
-    }
-
-    // Decoding to handle tuple
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(UUID.self, forKey: .id)
-        type = try container.decode(String.self, forKey: .type)
-        let positionArray = try container.decode([Float].self, forKey: .position)
-        position = (positionArray[0], positionArray[1], positionArray[2])
+    // Computed property to convert hex string to SwiftUI Color
+    var color: Color {
+        Color(hex: colorHex)
     }
 }
 
-struct FurnitureCatalog {
-    static let allFurniture: [Furniture] = [
-        Furniture(name: "Sofa", width: 2.0, height: 0.8, length: 0.9, color: .blue),
-        Furniture(name: "Chair", width: 0.5, height: 0.8, length: 0.5, color: .red),
-        Furniture(name: "Table", width: 1.5, height: 0.5, length: 1.0, color: .brown),
-        Furniture(name: "Bed", width: 2.0, height: 0.5, length: 1.5, color: .gray)
-    ]
+// Extension to generate a 3D SceneKit node for each piece of furniture
+extension Furniture {
+    func createNode() -> SCNNode {
+        let node = SCNNode()
+
+        // Create a 3D box with furniture dimensions
+        let box = SCNBox(width: CGFloat(width), height: CGFloat(height), length: CGFloat(length), chamferRadius: 0.1)
+
+        // Assign material with color
+        let material = SCNMaterial()
+        material.diffuse.contents = UIColor(Color(hex: colorHex)) // Convert SwiftUI Color to UIColor
+        box.materials = [material]
+
+        node.geometry = box
+        node.position = SCNVector3(position[0], position[1], position[2])
+
+        return node
+    }
+}
+
+// Convert SwiftUI Color to UIColor
+extension UIColor {
+    convenience init(_ color: Color) {
+        let uiColor = UIColor(color)
+        self.init(cgColor: uiColor.cgColor)
+    }
 }

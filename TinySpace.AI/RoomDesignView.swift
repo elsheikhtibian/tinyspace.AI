@@ -1,3 +1,7 @@
+import SwiftUI
+import SceneKit
+
+
 struct RoomDesignView: View {
     let roomImage: UIImage
     let roomDimensions: (width: Double, depth: Double, height: Double)

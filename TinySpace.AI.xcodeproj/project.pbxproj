@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0815E4112D9DC96F001B9549 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0815E4102D9DC96F001B9549 /* SceneKit.framework */; };
 		084CDE0D2D5143FD00A3594D /* RoomDesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CDE0C2D5143FD00A3594D /* RoomDesignView.swift */; };
 		084CDE0F2D5149CA00A3594D /* FurnitureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CDE0E2D5149CA00A3594D /* FurnitureModel.swift */; };
 		084CDE112D5149E100A3594D /* RoomAnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084CDE102D5149E100A3594D /* RoomAnalysisService.swift */; };
@@ -21,6 +22,7 @@
 		08C8C62B2D4EAFF1000D9389 /* TinySpace_AIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C62A2D4EAFF1000D9389 /* TinySpace_AIUITests.swift */; };
 		08C8C62D2D4EAFF1000D9389 /* TinySpace_AIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C62C2D4EAFF1000D9389 /* TinySpace_AIUITestsLaunchTests.swift */; };
 		08C8C63A2D4EB0BD000D9389 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C8C6392D4EB0BD000D9389 /* ImagePicker.swift */; };
+		08D1ACDA2D9DC12000337067 /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 08D1ACD92D9DC12000337067 /* YOLOv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0815E4102D9DC96F001B9549 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		084CDE0C2D5143FD00A3594D /* RoomDesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDesignView.swift; sourceTree = "<group>"; };
 		084CDE0E2D5149CA00A3594D /* FurnitureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureModel.swift; sourceTree = "<group>"; };
 		084CDE102D5149E100A3594D /* RoomAnalysisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomAnalysisService.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		08C8C62A2D4EAFF1000D9389 /* TinySpace_AIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinySpace_AIUITests.swift; sourceTree = "<group>"; };
 		08C8C62C2D4EAFF1000D9389 /* TinySpace_AIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinySpace_AIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		08C8C6392D4EB0BD000D9389 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		08D1ACD92D9DC12000337067 /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = YOLOv3.mlmodel; path = ../../../Downloads/YOLOv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0815E4112D9DC96F001B9549 /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0815E40F2D9DC96F001B9549 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0815E4102D9DC96F001B9549 /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		08C8C6032D4EAFEC000D9389 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +105,7 @@
 				08C8C61F2D4EAFF1000D9389 /* TinySpace.AITests */,
 				08C8C6292D4EAFF1000D9389 /* TinySpace.AIUITests */,
 				08C8C60D2D4EAFEC000D9389 /* Products */,
+				0815E40F2D9DC96F001B9549 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +156,7 @@
 		08C8C6292D4EAFF1000D9389 /* TinySpace.AIUITests */ = {
 			isa = PBXGroup;
 			children = (
+				08D1ACD92D9DC12000337067 /* YOLOv3.mlmodel */,
 				08C8C62A2D4EAFF1000D9389 /* TinySpace_AIUITests.swift */,
 				08C8C62C2D4EAFF1000D9389 /* TinySpace_AIUITestsLaunchTests.swift */,
 			);
@@ -278,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08D1ACDA2D9DC12000337067 /* YOLOv3.mlmodel in Sources */,
 				084CDE132D5149FB00A3594D /* AILayoutGenerator.swift in Sources */,
 				08C8C63A2D4EB0BD000D9389 /* ImagePicker.swift in Sources */,
 				084CDE152D514A1200A3594D /* FurnitureStorageService.swift in Sources */,
